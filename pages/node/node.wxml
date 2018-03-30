@@ -1,2 +1,10 @@
 <!--pages/node/node.wxml-->
-<text>pages/node/node.wxml</text>
+<text>生成地址</text>
+ <input placeholder='3DM图片页地址' style='width: 100%;border: 1px solid #333;' bindinput="inputLink"></input>
+ <input placeholder='最大页数' value='45' style='width: 100%;border: 1px solid #333;' bindinput="inputNm"></input>
+ 
+ <button bindtap="btnMakeLinks">生成</button>
+ <view class='out'>
+  <input value='{{exportLinks}}' maxlength='-1'></input> 
+ <!-- <text selectable="true">{{exportLinks}}</text> -->
+ </view>

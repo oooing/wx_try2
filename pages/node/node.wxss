@@ -1,1 +1,4 @@
-/* pages/node/node.wxss */
+.out{
+  width: 100%;
+  word-break: break-all;
+}
