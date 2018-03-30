@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class='container'>
+  <navigator url='../wenzhang1/wenzhang1?title=wenzhang1'>wenzhang1</navigator>
+</view>
+<view class="container">
+  <input placeholder='请输入运单号' bindinput='inputNum'></input>
+  <button bindtap="queryExpress">查询</button>
+  <view wx:for="{{expressInfor.data}}">{{item.context}}【{{item.time}}】</view>
+</view>

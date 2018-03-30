@@ -1,0 +1,46 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+page{
+  background:  #efefef;
+  font-size: 14px;
+}
+
+/* 全局 */
+.content-block{
+  padding: 0 20px;
+}
+.content-padding{
+  padding: 12px;
+}
+.list-container{
+  display: flex;
+  flex-direction:column;
+}
+.list-cell-container{
+  padding: 12px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+.flex-start{
+  display: flex; 
+  justify-content:space-between;
+}
+.flex-between{
+  display: flex; 
+  justify-content: flex-start;
+}
+.flex-direction{
+  display: flex; 
+  flex-direction: column;
+}
+.flex-flex{
+  flex:auto;
+}

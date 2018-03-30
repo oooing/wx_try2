@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/vx/vx",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/wenzhang1/wenzhang1",
+    "pages/chat/chat",
+    "pages/node/node",
+    "pages/post/post"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/vx/vx",
+        "text": "首页",
+        "navigationBarTitleText": "VX"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "话题",
+        "navigationBarTitleText": "话题"
+      },
+      {
+        "pagePath": "pages/node/node",
+        "text": "节点",
+        "navigationBarTitleText": "节点"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

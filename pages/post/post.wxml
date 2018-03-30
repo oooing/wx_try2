@@ -1,0 +1,28 @@
+<view class='list-container'>
+
+  <text>{{post.title}}</text>
+  <view>
+  <text>{{post.member.username}}</text>      <text>{{post.created}}</text>
+  <text>{{post.content}}</text>
+  </view>
+  <view class='flex-between'>
+    <text>{{post.replies}}条回复</text>
+    <text>{{post.node.title}}</text>
+  </view>
+</view>
+<!--回复  -->
+<view wx:for="{{comment}}">
+  <view class='list-container'>
+  
+    
+    <view class='flex-start'>
+      <view><image src='{{comment[index].member.avatar_normal}}' style='width: 60px;height: 60px;'></image></view>
+      <view class='flex-flex'>
+        <text>{{comment[index].member.username}}</text><text>{{comment[index].created}}</text>
+        <view>{{comment[index].content}}</view>
+      </view>
+    </view>
+    
+  
+  </view>
+</view>

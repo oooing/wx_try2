@@ -1,0 +1,26 @@
+<view wx:for="{{list_post}}">
+
+  <view class="list-container">
+    <view class='list-cell-container' bindtap='listClick' data-name='王二' id='{{list_post[index].id}}'>
+      <view class='flex-start'>
+        <view style='width: 60px; height: 60px;'>
+        <image src='{{list_post[index].node.avatar_normal}}' style='width: 60px;height: 60px;'></image>
+        </view>
+        <view class='flex-flex'>
+          <text style='color: #888;'>{{list_post[index].member.username}}</text> <text>{{list_post[index].created}}</text> 
+          <view>{{list_post[index].content}}</view>  
+        <view>
+        
+      </view>            
+        </view>
+      </view>
+      
+      <view class='flex-between'>
+        <text>{{list_post[index].replies}}条回复</text>
+        <text>{{list_post[index].node.title}}</text>
+      </view>
+    </view>
+
+    
+  </view>
+</view>
