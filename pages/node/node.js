@@ -5,9 +5,36 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    sourceLink:null,
+    pageNumber:45,
+    exportLinks:"",
   },
-
+  inputLink:function(e){
+    // console.log(e);
+    this.setData({
+      sourceLink:e.detail.value
+    });
+    // console.log(this.data.sourceLink);
+    
+  },
+  inputNm:function(e){
+    this.setData({
+      pageNumber: e.detail.value
+    });
+  },
+  btnMakeLinks:function(){
+    let thisPage=this;
+    let exportLinks="";
+    let firstLink = thisPage.data.sourceLink + '.html;';
+    for (let i = 2; i <= thisPage.data.pageNumber ; i++){
+      exportLinks+=thisPage.data.sourceLink+'_'+i+'.html;';
+      
+    };
+    console.log(firstLink+exportLinks);
+    thisPage.setData({
+      exportLinks: firstLink+exportLinks,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
