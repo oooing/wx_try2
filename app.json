@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/try4/try4",
     "pages/vx/vx",
     "pages/index/index",
     "pages/logs/logs",
@@ -7,6 +8,7 @@
     "pages/chat/chat",
     "pages/node/node",
     "pages/post/post"
+    
   ],
   "tabBar": {
     "list": [
@@ -24,6 +26,11 @@
         "pagePath": "pages/node/node",
         "text": "节点",
         "navigationBarTitleText": "节点"
+      },
+      {
+        "pagePath": "pages/try4/try4",
+        "text": "节点",
+        "navigationBarTitleText": "test4"
       }
     ]
   },

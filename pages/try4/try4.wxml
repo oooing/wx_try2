@@ -1,0 +1,6 @@
+<view class='try-box-container'>
+  <view class='box'>1</view>
+  <view class='box s2'>2</view>
+  <view class='box'>3</view>
+  <view class='box'>4</view>
+</view>
