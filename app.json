@@ -1,10 +1,12 @@
 {
   "pages": [
-    "pages/try4/try4",
     "pages/vx/vx",
     "pages/index/index",
-    "pages/logs/logs",
     "pages/wenzhang1/wenzhang1",
+    "pages/try4/try4",
+    
+    "pages/logs/logs",
+    
     "pages/chat/chat",
     "pages/node/node",
     "pages/post/post"
