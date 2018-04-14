@@ -1,2 +1,4 @@
-<!--pages/chat/chat.wxml-->
-<text>pages/chat/chat.wxml</text>
+<view wx:for="{{imgData}}" class='pic-box' >
+<image src='{{imgData[index].img}}' mode='widthFix'  style='width: 100%;'></image>
+
+</view>
