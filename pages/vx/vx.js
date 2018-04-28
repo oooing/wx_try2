@@ -16,11 +16,22 @@ Page({
     
     })
   },
+  
+
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let thisPage=this
+    wx.clearStorage();
+    wx.setStorage({
+      key: "name",
+      data: "Pitt Lun"
+      });
+    
+
+
+    let thisPage=this;
     wx.request({
       url: 'https://www.v2ex.com/api/topics/hot.json',
       data: '',
@@ -78,6 +89,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
+    console.log('onLoad')
   
   },
 

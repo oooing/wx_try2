@@ -1,6 +1,7 @@
 <!--index.wxml-->
 <view class='container'>
   <navigator url='../wenzhang1/wenzhang1?title=wenzhang1'>wenzhang1</navigator>
+  <navigator url='../vx/vx'>列表页详情页</navigator>
 </view>
 <view class="container">
   <input placeholder='请输入运单号' bindinput='inputNum'></input>

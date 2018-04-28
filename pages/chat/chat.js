@@ -1,4 +1,5 @@
 // pages/chat/chat.js
+var pagenum = 2;
 Page({
 
   /**
@@ -9,30 +10,6 @@ Page({
     imgData:null,
     imgUrl:null,
     imgId:null
-  },
-
-  onReachBottom:function(){
-    console.log('到底啦');
-    // let thisPage = this;
-    // for(let i=2;i<500;i++){
-    //   wx.request({
-    //     url: 'http://api.lililili.info/api/offline/today/babes/' + i,
-    //     data: '',
-    //     header: {},
-    //     method: 'GET',
-    //     dataType: 'json',
-    //     responseType: 'text',
-    //     success: function (res) {
-    //       console.log(res);
-    //       thisPage.setData({
-    //         imgData: res.data.data,
-    //       });
-    //       // console.log(imgData);
-    //     },
-    //     fail: function (res) { },
-    //     complete: function (res) { },
-    //   })
-    // }
     
   },
 
@@ -101,8 +78,35 @@ Page({
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
   
+  onReachBottom: function () {
+    console.log("触发上滑");
+    let thisPage = this;
+    
+    
+      wx.request({
+        url: 'http://api.lililili.info/api/offline/today/babes/' + pagenum,
+        data: '',
+        header: {},
+        method: 'GET',
+        dataType: 'json',
+        responseType: 'text',
+        success: function (res) {
+          console.log('imgData=' + thisPage.data.imgData);
+          console.log('res.data.data=' + res.data.data);
+          let all=thisPage.data.imgData.concat(res.data.data);
+          console.log(all);
+          thisPage.setData({
+            
+            imgData: all,
+          });
+          console.log(pagenum)
+          pagenum++;
+          console.log(pagenum)
+        },
+      })
+    
+   
   },
 
   /**
